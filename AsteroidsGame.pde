@@ -26,7 +26,7 @@ public void keyPressed() {
   if(key == 's')
   ok.accelerate(-1);
   if(key == 'd')
-  ok.turn(1);
+  ok.turn(5);
   if(key == 'a')
-  ok.turn(-1);
+  ok.turn(-5);
 }
