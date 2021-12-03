@@ -27,7 +27,9 @@ public SpaceShip() {
     myXspeed = 0;
     myYspeed = 0;
     myPointDirection = 0;
-    myColor = color(0,255,255);
+    //myColor = color(0,255,255);
+    myCenterX = (int)(Math.random()*501);
+    myCenterY = (int)(Math.random()*501);
 }
 
 public void hyperspace() {
