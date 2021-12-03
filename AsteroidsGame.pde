@@ -1,3 +1,4 @@
+private SpaceShip [] fleet = new SpaceShip[10];
 private Star [] blah = new Star[200];
 private SpaceShip ok = new SpaceShip();
 public void setup() 
@@ -6,6 +7,10 @@ public void setup()
   for(int i=0;i<blah.length;i++)
   {
     blah[i] = new Star();
+  }
+  for(int i =0; i<fleet.length;i++)
+  { 
+    fleet[i]= new SpaceShip();
   }
 }
 public void draw() 
@@ -17,16 +22,30 @@ public void draw()
   }
   ok.show();
   ok.move();
+  for(int i = 0; i< fleet.length; i++){
+  fleet[i].show();
+  fleet[i].move();}
 }
+
 public void keyPressed() {
   if(key == 'h')
-  ok.hyperspace();
+  for(int i=0;i<fleet.length;i++){
+    fleet[i].hyperspace();
+  ok.hyperspace();}
   if(key == 'w')
-  ok.accelerate(1);
+  for(int i=0;i<fleet.length;i++){
+    fleet[i].accelerate(1);
+  ok.accelerate(1);}
   if(key == 's')
-  ok.accelerate(-1);
+  for(int i=0;i<fleet.length;i++){
+    fleet[i].accelerate(-1);
+  ok.accelerate(-1);}
   if(key == 'd')
-  ok.turn(5);
+  for(int i=0;i<fleet.length;i++){
+    fleet[i].turn(5);
+  ok.turn(5);}
   if(key == 'a')
-  ok.turn(-5);
+  for(int i=0;i<fleet.length;i++){
+    fleet[i].turn(-5);
+  ok.turn(-5);}
 }
