@@ -78,9 +78,9 @@ public void draw()
    for(int i =0; i<field.size();i++){
   field.get(i).move();
   field.get(i).show();
-  /*float d =dist((float)ok.myCenterX,(float)ok.myCenterY,(float)field.get(i).myCenterX,(float)field.get(i).myCenterY);
+  float d =dist((float)ok.myCenterX,(float)ok.myCenterY,(float)field.get(i).myCenterX,(float)field.get(i).myCenterY);
   if(d < 10)
-  field.remove(i);*/
+  field.remove(i);
 }
 }
 public void keyPressed() {
